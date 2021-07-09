@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderConfirmActivity">
+
+    <include layout="@layout/app_bar_orange"/>
+
+    <RelativeLayout
+        android:layout_margin="7dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="7dp">
+
+        <TextView
+            android:id="@+id/text_view_order_confirmation"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank you, your order was placed successfully."
+            android:textSize="27dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/button_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Go back to home"
+            android:backgroundTint="@color/orange"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

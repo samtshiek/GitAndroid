@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <include layout="@layout/app_bar_orange"/>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_grocery_app"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:visibility="gone"
+            android:id="@+id/button_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_centerInParent="true"
+            android:textSize="27dp"
+            android:backgroundTint="@color/black"
+            android:layout_above="@+id/button_login"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="27dp"
+            android:backgroundTint="@color/black"
+            android:layout_centerInParent="true"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_centerInParent="true"
+            android:textSize="27dp"
+            android:textColor="@color/orange"
+            android:backgroundTint="@color/black"
+            android:layout_below="@+id/button_login"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

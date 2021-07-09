@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditAddressActivity">
+
+    <include layout="@layout/app_bar_orange"/>
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:id="@+id/edit_text_house_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="7"
+        android:hint="House Number"
+        android:textSize="27dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_street"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Street"
+        android:textSize="27dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="City"
+        android:textSize="27dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="5"
+        android:hint="Pin code"
+        android:textSize="27dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/orange">
+
+        <RadioButton
+            android:id="@+id/radio_office"
+            android:outlineSpotShadowColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Office"
+            android:textSize="22dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:textSize="22dp"/>
+
+        <RadioButton
+            android:id="@+id/radio_other"
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:textSize="22dp"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/text_view_radio"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Radio button value"
+        android:textSize="21dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_save"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:text="Save"
+        android:textSize="24dp"/>
+
+</LinearLayout>

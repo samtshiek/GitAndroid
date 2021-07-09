@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_bar_orange"/>
+
+    <LinearLayout
+        android:layout_margin="7dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/text_view_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="27dp"/>
+
+        <TextView
+            android:layout_marginBottom="7dp"
+            android:gravity="center"
+            android:id="@+id/text_view_token"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Token"
+            android:textSize="17dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/text_view_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/text_view_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/text_view_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:layout_centerInParent="true"
+        android:textSize="27dp"
+        android:textColor="@color/orange"
+        android:backgroundTint="@color/black"
+        android:layout_above="@+id/button_logout"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_margin="10dp"
+        android:id="@+id/button_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log out"
+        android:textSize="27dp"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/black"
+        />
+
+</RelativeLayout>
